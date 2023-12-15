@@ -128,7 +128,6 @@ while place_order:
                     # Store the item name as a variable
                     item_name = menu_items[menu_category_customer_response_int]['Item name']
                     item_price = menu_items[menu_category_customer_response_int]['Price']
-                    print(f"Item Name: {item_name}")
                     # Ask the customer for the quantity of the menu item
                     quantity = input(f"How many {item_name}'s would you like?")
 
@@ -137,7 +136,6 @@ while place_order:
                     # Add the item name, price, and quantity to the order list
                         current_order = {'Item name': item_name, 'Price': item_price, 'Quantity': quantity}
                         order_list.append(current_order)
-                        print(f"orderlist: {order_list}")
                     # Tell the customer that their input isn't valid
                     else:
                         print("Input is not valid")
